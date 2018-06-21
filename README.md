@@ -13,9 +13,13 @@ NOTE: If you want to modify the code, make sure main.hpp contains no API (such a
 
 ## Run
 
-rosrun camera_node camera_node
+    rosrun camera_node camera_node
 
-Then you can use rosrun image_view image_view image:=/camera/image to view the rostopic
+Then you can use 
+
+    rosrun image_view image_view image:=/camera/image 
+
+to view the rostopic
 
 # lib_camera_gmsl_raw
 
