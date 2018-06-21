@@ -30,11 +30,6 @@ public:
     header.stamp = stamp;
     header.seq = m_seq++;
 
-#ifdef USE_CV_BRIDGE
-    cv::Mat rgb_img_mat(cv::Size(width, height), CV_8UC3, data);
-    cv_bridge::CvImage cvImage = cv_bridge::CvImage(header, "rgb8", rgb_img_mat);
-    m_imagePub.publish(cvImage.toImageMsg());
-#else
     sensor_msgs::Image image_msg;
     image_msg.header = header;
     image_msg.encoding = sensor_msgs::image_encodings::RGB8;
@@ -45,7 +40,6 @@ public:
     image_msg.data.resize(size);
     memcpy(image_msg.data.data(), data, size);
     m_pub.publish(image_msg);
-#endif
   }
 
 };
