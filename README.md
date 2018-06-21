@@ -23,7 +23,7 @@ to view the rostopic
 
 # lib_camera_gmsl_raw
 
-Provide API to read camera data on Drive PX2. Code is based on driveworks sample sample_camera_gmsl_raw, with just few lines of change.
+Provide API to read camera data on Drive PX2. Code is based on driveworks sample code sample_camera_gmsl_raw, with just few lines of change.
 
 ## Compile
 
