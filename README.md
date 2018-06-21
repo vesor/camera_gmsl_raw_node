@@ -9,7 +9,7 @@ The code should be compiled using catkin_make on target machine (Drive PX2).
 
 Before compile this code, please crosscompile the project lib_camera_gmsl_raw on host machine. Then copy main.hpp and *.so into camera_node/external folder on target machine.
 
-NOTE: If you want to modify the code, make sure main.hpp contains no API (such as std::string) that will breaks ABI compatible between GCC4.9 and GCC5.x, because the liblib_camera_gmsl_raw.so file is compiled using nvidia's GCC4.9 and catkin_make use GCC5.x
+NOTE: If you want to modify the code, make sure main.hpp contains no API (such as std::string) that will break ABI compatible between GCC4.9 and GCC5.x, because the liblib_camera_gmsl_raw.so file is compiled using nvidia's GCC4.9 and catkin_make use GCC5.x
 
 ## Run
 
